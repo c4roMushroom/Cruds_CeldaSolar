@@ -9,20 +9,20 @@
             <th>Razon Social</th>
             <th>Correo</th>
             <th>Dirección</th>
-            <th>Telefono</th>
+            <th>Telefono</th> 
         </tr>
     </thead>
     <tbody>
         @foreach ($clientes as $datos)
             <tr>
                 <td>{{$datos->cod_cliente}}</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{$datos->tipo_documento}}</td>
+                <td>{{$datos->nombre_cliente}}</td>
+                <td>{{$datos->apellido_cliente}}</td>
+                <td>{{$datos->razonSocial_cliente}}</td>
+                <td>{{$datos->correo_cliente}}</td>
+                <td>{{$datos->direccion_cliente}}</td>
+                <td>{{$datos->telefono_cliente}}</td>
                 <td></td>
             </tr>
         @endforeach
